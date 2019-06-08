@@ -1,0 +1,16 @@
+html(ng-app='myApp')
+  head
+    title chirag nagpal
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css")
+    link(rel="stylesheet", href="css/style.css")
+    script(src="http://code.angularjs.org/1.2.13/angular.js")
+    script(src="https://code.angularjs.org/1.2.13/angular-route.js")
+    
+    script(src="app.js")
+    script(src="homeController.js")
+    script(src="loginService.js")
+    script(src="loginController.js")
+    
+  body
+    h1 Login Form
+    div ng-view

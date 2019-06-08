@@ -1,0 +1,15 @@
+div.col-12
+  p
+    strong Login Page
+form.form(ng-submit = "formSubmit()")
+  div.col-4
+    div.form-group
+      input.form-control(type = "text",ng-model = "username",placeholder = "UserName")
+    
+    div.form-group
+      input.form-control(type = "password",ng-model = "password",placeholder = "Password")
+    
+    div.form-group
+        button.btn.btn-success(type = "submit") Login
+        span.text-danger(style = "color:red") {{error}}
+        
