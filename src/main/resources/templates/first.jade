@@ -5,7 +5,7 @@ html(ng-app='myApp')
     link(rel="stylesheet", href="css/style.css")
     script(src="http://code.angularjs.org/1.2.13/angular.js")
     script(src="https://code.angularjs.org/1.2.13/angular-route.js")
-    
+
     script(src="app.js")
     script(src="homeController.js")
     script(src="loginService.js")
@@ -13,4 +13,5 @@ html(ng-app='myApp')
     
   body
     h1 Login Form
-    div ng-view
+    p Current Location is: {{$ctrl.currentLocation+"chirag"}}
+    div(ng-view)

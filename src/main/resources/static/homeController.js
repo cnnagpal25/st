@@ -1,7 +1,7 @@
 var app = angular.module('myApp');
 
-  app.controller('HomeController', 
+  app.controller('HomeController',
   function($scope, $rootScope, $routeParams, $route, LoginService) {
-    $scope.user = $rootScope.userName;
+    $scope.user = $rootScope.username;
 
   });

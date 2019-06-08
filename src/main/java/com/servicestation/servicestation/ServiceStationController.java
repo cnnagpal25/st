@@ -8,8 +8,18 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class ServiceStationController {
 
     @GetMapping(value = "/")
-    public String home() {
+    public String first() {
         return "first";
+    }
+
+    @GetMapping(value = "/partial/login")
+    public String login() {
+        return "login";
+    }
+
+    @GetMapping(value = "/partial/home")
+    public String home() {
+        return "home";
     }
 
     @GetMapping(value = "/error")
